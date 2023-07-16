@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ movie.title }}</title>
+</head>
+<style>
+    img {
+        align-items: center;
+        max-width: 300px; /* Set maximum width for the image */
+        height: auto; /* Allow the height to adjust accordingly */
+    }body {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      padding: 15px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+</style>
+<body >
+    <nav>
+        <ul>
+            <li><a href="#">Vista Movies API</a></li>
+        </ul>
+      </nav>
+      <br><br>
+    <img src="{{ 'https://image.tmdb.org/t/p/original' + movie.poster_path }}" alt="{{ movie.title }} Poster">
+    <h1>{{ movie.title }}</h1>
+    <p><strong>Overview:</strong> {{ movie.overview }}</p>
+    <p><strong>Movie ID:</strong> {{ movie.id }}</p>
+    <p><strong>Adult:</strong> {{ movie.adult }}</p>
+    <!-- <p><strong>Backdrop Path:</strong> {{ movie.backdrop_path }}</p> -->
+    <!-- <p><strong>Genre IDs:</strong> {{ movie.genre_ids }}</p> -->
+    <p><strong>Original Language:</strong> {{ movie.original_language }}</p>
+    <p><strong>Original Title:</strong> {{ movie.original_title }}</p>
+    <p><strong>Popularity:</strong> {{ movie.popularity }}</p>
+    <p><strong>Release Date:</strong> {{ movie.release_date }}</p>
+    <p><strong>Vote Average:</strong> {{ movie.vote_average }}</p>
+    <p><strong>Vote Count:</strong> {{ movie.vote_count }}</p>
+
+    <footer>
+        <br> <br> 
+        Made by @Surya AP20110010752 
+        <br> <br> <br> <br> <br>
+    </footer>
+</body>
+
+</html>
