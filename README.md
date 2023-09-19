@@ -1,4 +1,4 @@
-# TDP-Vista-MovieAPI
+# MovieAPI
 Objective:
 This solution aims to create a Flask API that includes authentication using
 an API key. The API allows users to retrieve movie details by sending a movie name
